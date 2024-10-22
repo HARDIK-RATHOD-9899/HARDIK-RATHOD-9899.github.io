@@ -159,14 +159,14 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-const Resume = "MY_RESUME.pdf"; // Update this path
+const Resume = "Rathod_Hardik_(Resume).pdf"; // Update this path
 
 
 const downloadresume=()=>{
     window.open(Resume, "_blank");
     const link = document.createElement("a");
     link.href = Resume;
-    link.download = "MY_RESUME.pdf";
+    link.download = "Rathod_Hardik_(Resume).pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
