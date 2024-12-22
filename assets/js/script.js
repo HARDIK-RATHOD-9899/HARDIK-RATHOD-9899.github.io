@@ -159,14 +159,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-const Resume = "Rathod_Hardik_(Resume).pdf"; // Update this path
+const Resume = "HardikRathod_Fullstack_Resume.pdf"; 
 
 
 const downloadresume=()=>{
     window.open(Resume, "_blank");
     const link = document.createElement("a");
     link.href = Resume;
-    link.download = "Rathod_Hardik_(Resume).pdf";
+    link.download = "HardikRathod_Fullstack_Resume.pdf";
+
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
