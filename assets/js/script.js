@@ -172,3 +172,77 @@ const downloadresume=()=>{
     link.click();
     document.body.removeChild(link);
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const list = document.querySelector('.clients-list');
+  const items = document.querySelectorAll('.clients-item');
+  const scrollLeftBtn = document.querySelector('.scroll-left');
+  const scrollRightBtn = document.querySelector('.scroll-right');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  // Scroll arrow functionality
+  scrollLeftBtn.addEventListener('click', () => {
+    list.scrollBy({
+      left: -200,
+      behavior: 'smooth'
+    });
+  });
+
+  scrollRightBtn.addEventListener('click', () => {
+    list.scrollBy({
+      left: 200,
+      behavior: 'smooth'
+    });
+  });
+
+  // Mouse events for smooth dragging
+  list.addEventListener('mousedown', (e) => {
+    isDown = true;
+    startX = e.pageX - list.offsetLeft;
+    scrollLeft = list.scrollLeft;
+  });
+
+  list.addEventListener('mouseleave', () => {
+    isDown = false;
+  });
+
+  list.addEventListener('mouseup', () => {
+    isDown = false;
+  });
+
+  list.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - list.offsetLeft;
+    const walk = (x - startX) * 2;
+    list.scrollLeft = scrollLeft - walk;
+  });
+
+  // Scroll-based animations
+  const updateActiveItems = () => {
+    const center = list.offsetWidth / 2;
+    items.forEach(item => {
+      const rect = item.getBoundingClientRect();
+      const itemCenter = rect.left + rect.width / 2;
+      const distanceFromCenter = Math.abs(itemCenter - center);
+      
+      if (distanceFromCenter < 150) {
+        item.classList.add('active');
+      } else {
+        item.classList.remove('active');
+      }
+    });
+  };
+
+  // Update active items on scroll
+  list.addEventListener('scroll', () => {
+    updateActiveItems();
+  });
+
+  // Initial update
+  updateActiveItems();
+});

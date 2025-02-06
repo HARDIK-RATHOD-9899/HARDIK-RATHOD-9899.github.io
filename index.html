@@ -10,16 +10,13 @@
     - favicon
   -->
 
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
 
-    <script
-    src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"
-  ></script>
-  
-  <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-  <link
-     rel="stylesheet"
-     href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-  />
+    <!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
 
     <!--
     - custom css link
@@ -40,6 +37,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=work_history"
     />
   </head>
 
@@ -137,19 +138,31 @@
 
           <ul class="social-list">
             <li class="social-item">
-              <a href="https://www.linkedin.com/in/hardik-rathod-2a025b269/" target="_blank" class="social-link">
+              <a
+                href="https://www.linkedin.com/in/hardik-rathod-2a025b269/"
+                target="_blank"
+                class="social-link"
+              >
                 <ion-icon name="logo-linkedin"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="https://x.com/RathodHard22933"     target="_blank"  class="social-link">
+              <a
+                href="https://x.com/RathodHard22933"
+                target="_blank"
+                class="social-link"
+              >
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
-              <a href="https://github.com/HARDIK-RATHOD-9899" target="_blank" class="social-link">
+              <a
+                href="https://github.com/HARDIK-RATHOD-9899"
+                target="_blank"
+                class="social-link"
+              >
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
@@ -217,9 +230,41 @@
           <!--
           - service
         -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <!-- <ion-icon name="book-outline"></ion-icon> -->
+                <span class="material-symbols-outlined"> work_history </span>
+              </div>
 
-        <button class="download-button" onclick="downloadresume()">Download Resume</button>
-<br>  
+              <h3 class="h3">EXPERIENCE</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">TechMind IT Academy</h4>
+
+                <span
+                  >Full-Stack Developer/Tutor (November 2024 - January
+                  2025)</span
+                >
+
+                <p class="timeline-text">
+                  Developed and maintained full-stack
+                  applications, ensuring high performance and scalability.
+                  Provided client support by troubleshooting issues and
+                  delivering optimized solutions. Instructed students on
+                  full-stack development concepts and technologies through
+                  hands-on projects. Assisted in curriculum development and
+                  mentored students to build industry-ready skills.
+                </p>
+              </li>
+            </ol>
+          </section>
+          <button class="download-button" onclick="downloadresume()">
+            Download Resume
+          </button>
+          <br />
           <section class="service">
             <h3 class="h3 service-title">Service</h3>
 
@@ -238,7 +283,8 @@
                   <h4 class="h4 service-item-title">Web Development</h4>
 
                   <p class="service-item-text">
-                    Web development involves creating and maintaining websites, including both front-end design and back-end functionality.
+                    Web development involves creating and maintaining websites,
+                    including both front-end design and back-end functionality.
                   </p>
                 </div>
               </li>
@@ -255,9 +301,10 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Front-end development</h4>
                   <p class="service-item-text">
-                    Front-end development builds the visual and interactive parts of websites using HTML, CSS, and JavaScript.                  </p>
+                    Front-end development builds the visual and interactive
+                    parts of websites using HTML, CSS, and JavaScript.
+                  </p>
                 </div>
-                
               </li>
 
               <li class="service-item">
@@ -272,33 +319,28 @@
                 <div class="service-content-box">
                   <h4 class="h4 service-item-title">Back-end development</h4>
                   <p class="service-item-text">
-                    Web development encompasses both front-end design and back-end functionality to create and maintain websites and web applications.                </div>
-                
+                    Web development encompasses both front-end design and
+                    back-end functionality to create and maintain websites and
+                    web applications.
+                  </p>
+                </div>
               </li>
-
-              
             </ul>
           </section>
 
-            <div class="modal-container" data-modal-container>
-              <div class="overlay" data-overlay></div>
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-              <section class="testimonials-modal">
-                <button class="modal-close-btn" data-modal-close-btn>
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-
-            
-
-              </section>
-            </div>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </section>
+          </div>
 
           <!--
           - clients
-        -->
-
-     
-        </article>
+        --></article>
 
         <!--
         - #RESUME
@@ -344,86 +386,47 @@
                   software development, and IT systems.
                 </p>
               </li>
-
-              
             </ol>
           </section>
           <section class="clients">
-            <h3 class="h3 clients-title">Tech Stack</h3>
-
+            <h3 class="clients-title">Tech Stack</h3>
+            <!-- <div class="scroll-arrow scroll-left">←</div> -->
+            <!-- <div class="scroll-arrow scroll-right">→</div> -->
             <ul class="clients-list has-scrollbar">
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/color/144/html-5--v1.png"
-                    alt="html-5--v1"
-                  />
+                  <img src="https://img.icons8.com/color/144/html-5--v1.png" alt="html-5--v1" />
                 </a>
               </li>
-
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/color/144/css3.png"
-                    alt="css3"
-                  />
+                  <img src="https://img.icons8.com/color/144/css3.png" alt="css3" />
                 </a>
               </li>
-
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/color/144/javascript--v1.png"
-                    alt="javascript--v1"
-                  />
+                  <img src="https://img.icons8.com/color/144/javascript--v1.png" alt="javascript--v1" />
                 </a>
               </li>
-
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/officel/144/react.png"
-                    alt="react"
-                  />
+                  <img src="https://img.icons8.com/officel/144/react.png" alt="react" />
                 </a>
               </li>
-
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/fluency/144/node-js.png"
-                    alt="node-js"
-                  />
+                  <img src="https://img.icons8.com/fluency/144/node-js.png" alt="node-js" />
                 </a>
               </li>
-
               <li class="clients-item">
                 <a href="#">
-                  <img
-                    width="144"
-                    height="144"
-                    src="https://img.icons8.com/color/144/mongodb.png"
-                    alt="mongodb"
-                  />
+                  <img src="https://img.icons8.com/color/144/mongodb.png" alt="mongodb" />
                 </a>
               </li>
             </ul>
           </section>
-       
-
         </article>
 
-        
         <!--
         - #PORTFOLIO
       -->
@@ -483,34 +486,48 @@
             </div>
 
             <ul class="project-list">
-
-              <li class="project-item active" data-filter-item data-category="web development">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
                 <a href="#">
-                  <a href="https://firebase-crud-snowy.vercel.app/" target="_blank">
+                  <a
+                    href="https://firebase-crud-snowy.vercel.app/"
+                    target="_blank"
+                  >
                     <figure class="project-img">
                       <div class="project-item-icon-box">
-                        <ion-icon  name="eye-outline"></ion-icon>
+                        <ion-icon name="eye-outline"></ion-icon>
                       </div>
-                      <img src="./assets/images/Admin.png" alt="finance" loading="lazy" />
+                      <img
+                        src="./assets/images/Admin.png"
+                        alt="finance"
+                        loading="lazy"
+                      />
                     </figure>
                   </a>
                   <h3 class="project-title">
-                    <div style="display: flex; justify-content:space-evenly;">
-                      <a href="https://github.com/HARDIK-RATHOD-9899/firebase-crud" target="_blank">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/firebase-crud"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="logo-github"></ion-icon>
                       </a>
-                      <a href="https://firebase-crud-snowy.vercel.app/" target="_blank">
+                      <a
+                        href="https://firebase-crud-snowy.vercel.app/"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="eye-outline"></ion-icon>
                       </a>
                     </div>
-                    
+
                     Admin
                   </h3>
                   <p class="project-category">Web development</p>
                 </a>
               </li>
-              
-              
 
               <li
                 class="project-item active"
@@ -532,15 +549,21 @@
                   </a>
 
                   <h3 class="project-title">
-                    <div style="display: flex; justify-content:space-evenly;">
-                      <a href="https://github.com/HARDIK-RATHOD-9899/KFC-CLONE" target="_blank">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/KFC-CLONE"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="logo-github"></ion-icon>
                       </a>
-                      <a href="https://kfc-clone-sigma.vercel.app/" target="_blank">
+                      <a
+                        href="https://kfc-clone-sigma.vercel.app/"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="eye-outline"></ion-icon>
                       </a>
                     </div>
-                    
+
                     KFC
                   </h3>
                   <p class="project-category">Web development</p>
@@ -570,23 +593,27 @@
                   </a>
 
                   <h3 class="project-title">
-                    <div style="display: flex; justify-content:space-evenly;">
-                      <a href="https://github.com/HARDIK-RATHOD-9899/BOOTSTRAP-WEBSITE" target="_blank">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/BOOTSTRAP-WEBSITE"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="logo-github"></ion-icon>
                       </a>
-                      <a href="https://bootstrap-website-gray.vercel.app/" target="_blank">
+                      <a
+                        href="https://bootstrap-website-gray.vercel.app/"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="eye-outline"></ion-icon>
                       </a>
                     </div>
-                    
+
                     Aroma
                   </h3>
 
                   <p class="project-category">Web design</p>
                 </a>
               </li>
-
-          
 
               <li
                 class="project-item active"
@@ -611,23 +638,27 @@
                     </figure>
                   </a>
                   <h3 class="project-title">
-                    <div style="display: flex; justify-content:space-evenly;">
-                      <a href="https://github.com/HARDIK-RATHOD-9899/Ajio-Clone" target="_blank">
+                    <div style="display: flex; justify-content: space-evenly">
+                      <a
+                        href="https://github.com/HARDIK-RATHOD-9899/Ajio-Clone"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="logo-github"></ion-icon>
                       </a>
-                      <a href="https://ajio-clone-ly6xwp8qb-rathod-hardiks-projects.vercel.app/" target="_blank">
+                      <a
+                        href="https://ajio-clone-ly6xwp8qb-rathod-hardiks-projects.vercel.app/"
+                        target="_blank"
+                      >
                         <ion-icon id="clr" name="eye-outline"></ion-icon>
                       </a>
                     </div>
-                    
+
                     Ajio
                   </h3>
 
                   <p class="project-category">Web design</p>
                 </a>
               </li>
-
-              
             </ul>
           </section>
         </article>
@@ -635,24 +666,36 @@
         <!--
         - #BLOG
       -->
-      <article class="portfolio" data-page="github-stats">
-        <header>
-          <h2 class="h2 article-title">Github Stats</h2>
-        </header>
-      
-        <div class="stats-container">
-          <img id="github-streak-stats" class="imgs" src="https://github-readme-streak-stats.herokuapp.com/?user=HARDIK-RATHOD-9899&theme=transparent" alt="GitHub Streak Stats" />
-          
-          <div class="calendar">Loading the data just for you.</div>
-      
-          <img id="github-stats-card" class="imgs" src="https://github-readme-stats.vercel.app/api?username=HARDIK-RATHOD-9899&theme=transparent&show_icons=true&locale=en" alt="GitHub Stats Card" />
-        </div>
-      </article>
-      
-    <script>
-      GitHubCalendar(".calendar","HARDIK-RATHOD-9899");
-      GitHubCalendar(".calendar", "HARDIK-RATHOD-9899", { responsive: true });
-    </script> 
+        <article class="portfolio" data-page="github-stats">
+          <header>
+            <h2 class="h2 article-title">Github Stats</h2>
+          </header>
+
+          <div class="stats-container">
+            <img
+              id="github-streak-stats"
+              class="imgs"
+              src="https://github-readme-streak-stats.herokuapp.com/?user=HARDIK-RATHOD-9899&theme=transparent"
+              alt="GitHub Streak Stats"
+            />
+
+            <div class="calendar">Loading the data just for you.</div>
+
+            <img
+              id="github-stats-card"
+              class="imgs"
+              src="https://github-readme-stats.vercel.app/api?username=HARDIK-RATHOD-9899&theme=transparent&show_icons=true&locale=en"
+              alt="GitHub Stats Card"
+            />
+          </div>
+        </article>
+
+        <script>
+          GitHubCalendar(".calendar", "HARDIK-RATHOD-9899");
+          GitHubCalendar(".calendar", "HARDIK-RATHOD-9899", {
+            responsive: true,
+          });
+        </script>
         <!--
         - #CONTACT
       -->
